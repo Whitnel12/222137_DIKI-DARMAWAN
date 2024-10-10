@@ -1,0 +1,155 @@
+/* Background dan Teks */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 600px; /* Memperkecil lebar maksimum */
+    margin: 0 auto;
+    padding: 15px; /* Mengurangi padding */
+    background-color: #f0f4f8; /* Warna biru sangat terang */
+    color: #333333; /* Teks abu-abu gelap */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px; /* Mengurangi padding container */
+    border-radius: 10px; /* Membulatkan sudut container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+h1 {
+    text-align: center;
+    color: #4a47a3;
+    margin-bottom: 15px; /* Mengurangi margin bawah */
+    font-size: 1.8em; /* Mengurangi ukuran font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #7d82b8;
+    padding-bottom: 8px; /* Mengurangi padding bawah */
+}
+
+.grid-layout {
+    display: flex;
+    flex-direction: column; /* Elemen ditampilkan secara vertikal */
+    gap: 15px; /* Jarak antar elemen */
+}
+
+.input-column, .output-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 10px; /* Mengurangi margin bawah */
+    background-color: #e3e7ff;
+    padding: 10px; /* Mengurangi padding */
+    border-radius: 8px; /* Membulatkan sudut */
+    border: 1px solid #b3b9e6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+}
+
+label {
+    display: block;
+    margin-bottom: 4px; /* Mengurangi margin pada label */
+    color: #4a47a3;
+    font-weight: bold;
+    font-size: 12px; /* Mengurangi ukuran font */
+    text-transform: uppercase;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px; /* Mengurangi padding */
+    background-color: #f7f9fc;
+    border: 1px solid #b3b9e6;
+    border-radius: 6px; /* Membulatkan input dan textarea */
+    color: #333333;
+    font-size: 14px; /* Mengurangi ukuran font */
+    box-sizing: border-box;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: #6f73c5;
+    box-shadow: 0 0 6px rgba(79, 87, 242, 0.2);
+}
+
+.button-group {
+    display: flex; /* Mengubah ke flex */
+    flex-direction: row; /* Tombol ditampilkan horizontal */
+    width: 100%;
+    gap: 10px; /* Jarak antar tombol */
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px; /* Mengurangi padding */
+    border: none;
+    border-radius: 8px; /* Sudut membulat untuk tombol */
+    cursor: pointer;
+    font-size: 14px; /* Mengurangi ukuran font */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    width: 100%; /* Tombol penuh di kolom */
+    flex-grow: 1; /* Membuat tombol tumbuh agar merata */
+}
+
+.encrypt-btn {
+    background-color: #6f73c5;
+    color: white;
+}
+
+.decrypt-btn {
+    background-color: #4a47a3;
+    color: white;
+}
+
+.upload-btn {
+    background-color: #89b0e0;
+    color: white;
+}
+
+button:hover {
+    background-color: #7d82b8;
+    transform: translateY(-2px); /* Efek hover terangkat */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    width: 100%;
+    background-color: #e3e7ff;
+    border: 1px solid #b3b9e6;
+    border-radius: 10px; /* Membulatkan output box */
+    padding: 15px; /* Mengurangi padding */
+    min-height: 100px; /* Mengurangi tinggi minimum */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Bayangan pada output */
+}
+
+.output h3 {
+    margin-top: 0;
+    color: #4a47a3;
+    border-bottom: 1px solid #7d82b8;
+    padding-bottom: 8px;
+    margin-bottom: 8px; /* Mengurangi margin bawah */
+}
+
+.download-btn {
+    background-color: #89b0e0;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px; /* Mengurangi padding */
+    font-size: 14px; /* Mengurangi ukuran font */
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        gap: 10px; /* Mengurangi jarak antar elemen */
+    }
+    .button-group {
+        gap: 5px; /* Mengurangi jarak antar tombol */
+    }
+}

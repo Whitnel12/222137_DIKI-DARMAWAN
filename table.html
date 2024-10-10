@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .no-column {
+            width: 50px;
+        }
+
+        .spec-column {
+            width: 200px;
+        }
+
+        .status-column {
+            width: 150px;
+        }
+
+        .info-column {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th class="no-column">No.</th>
+            <th class="spec-column">Spesifikasi</th>
+            <th class="status-column">Berhasil (✓)</th>
+            <th class="status-column">Kurang Berhasil (✓)</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Vigenere Cipher</td>
+            <td>✓</td>
+            <td></td>
+            <td class="info-column">Saat Plaintext = "DIKI" dienkripsi, hasil CipherText = "GIBU". Setelah dekripsi, kembali menjadi "DIKI" dengan Key = "test".</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Extended Vigenere Cipher</td>
+            <td>✓</td>
+            <td></td>
+            <td class="info-column">Saat Plaintext = "222137" dienkripsi, hasil CipherText = "vs~t". Setelah dekripsi, kembali menjadi "222137" dengan Key = "test".</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Playfair Cipher</td>
+            <td>✓</td>
+            <td></td>
+            <td class="info-column">Saat Plaintext = "DIKI" dienkripsi, hasil CipherText = "RGLK". Setelah dekripsi, kembali menjadi "DIKI" dengan Key = "test".</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Enigma Cipher</td>
+            <td>✓</td>
+            <td></td>
+            <td class="info-column">Saat Plaintext = "DIKI" dienkripsi, hasil CipherText = "UFUM". Setelah dekripsi, kembali menjadi "DIKI" dengan Key = "test".</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>One-Time Pad</td>
+            <td></td>
+            <td>✓</td>
+            <td class="info-column">Saat Plaintext = "DIKI" dienkripsi, hasil CipherText = "". Setelah dekripsi, kembali menjadi "DIKI" dengan Key = "test".</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

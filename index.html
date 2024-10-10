@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Ciphers - Modern Theme</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classical Ciphers</h1>
+        <div class="grid-layout">
+            <div class="input-column">
+                <div class="input-group">
+                    <label for="cipherType">Select Cipher</label>
+                    <select id="cipherType">
+                        <option value="vigenere">Vigenere Cipher (mengenkripsi huruf alfabet)</option>
+                        <option value="extendedVigenere">Extended Vigenere Cipher (256 karakter ASCII)</option>
+                        <option value="playfair">Playfair Cipher (matriks 5x5)</option>
+                        <option value="enigma">Enigma Cipher</option>
+                        <option value="otp">One-Time Pad</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="key">Encryption Key</label>
+                    <input type="text" id="key" placeholder="Enter encryption key">
+                </div>
+                <div class="input-group">
+                    <label for="inputText">Input Text</label>
+                    <textarea id="inputText" rows="6" placeholder="Enter text or drop a file"></textarea>
+                </div>
+                <div class="button-group">
+                    <button class="encrypt-btn" onclick="encrypt()">Encrypt</button>
+                    <button class="decrypt-btn" onclick="decrypt()">Decrypt</button>
+                    <input type="file" id="fileInput" style="display: none">
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Upload File</button>
+                </div>
+            </div>
+            <div class="output-column">
+                <div class="output">
+                    <h3>Output</h3>
+                    <p id="outputText"></p>
+                </div>
+                <button class="download-btn" onclick="downloadOutput()">Download Output</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
